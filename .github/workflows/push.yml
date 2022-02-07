@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
-        docker login -u ${{ secrets.DOCKER_PASSWORD }}  -p ${{ secret.DOCKER_USERNAME }}
+        docker login -u ${{ secrets.DOCKER_PASSWORD }}  -p ${{ secrets.DOCKER_USERNAME }}
