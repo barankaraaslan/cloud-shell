@@ -1,5 +1,5 @@
 # cloud-shell
-cloud-shell is my development enviroment for working with cloud providers
+cloud-shell is my development environment for working with cloud providers
 
 It includes cloud provider cli's I use pre-installed and authenticated with my credentials.
 
