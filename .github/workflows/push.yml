@@ -24,6 +24,6 @@ jobs:
       run: |
         docker login -u '${{ secrets.DOCKER_USERNAME }}'  -p '${{ secrets.DOCKER_PASSWORD }}'
         export TAG=$(date +%s)
-        docker build --secret id=aws_credentials -t cloud-shell .
+        DOCKER_BUILDKIT=1 docker build --secret id=aws_credentials -t cloud-shell .
         docker tag cloud-shell barankaraaslan/cloud-shell:$TAG
         docker push barankaraaslan/cloud-shell:$TAG
