@@ -13,4 +13,5 @@ provider "dockerhub" {
 resource "dockerhub_repository" "main" {
   name = "cloud-shell"
   namespace = "barankaraaslan"
+  private = "true"
 }
